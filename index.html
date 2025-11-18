@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Equus Rock Fest - Compra entradas para el mejor festival de rock">
+<title>Equus Rock Fest - Entradas e Información</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+<!-- Header -->
+<header role="banner">
+<div class="header-content">
+  <div class="logo-section">
+    <div class="logo">🎸</div>
+    <div>Equus Rock Fest</div>
+  </div>
+  <button class="hamburger" id="hamburger">☰</button>
+  <nav id="nav">
+    <a href="#artists">Artistas</a>
+    <a href="#schedule">Cronograma</a>
+    <a href="#tickets">Entradas</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+<div class="container">
+  <h1>Equus Rock Fest 2025</h1>
+  <p>15-17 de Junio | Anfiteatro Valle del Desierto</p>
+  <div class="hero-highlights">
+    <div>🎵 50+ Bandas</div>
+    <div>🌟 3 Días</div>
+    <div>🔥 Presentaciones Épicas</div>
+  </div>
+  <a href="#tickets" class="cta-button">Comprar Entradas</a>
+</div>
+</section>
+
+<!-- Artists -->
+<section id="artists">
+<div class="container">
+  <h2>Artistas</h2>
+  <div class="carousel">
+    <div class="carousel-card"><img src="https://via.placeholder.com/280x280/015253/ffffff?text=Band+1" alt="Band"><h3>The Thunderbolts</h3></div>
+    <div class="carousel-card"><img src="https://via.placeholder.com/280x280/D03013/ffffff?text=Band+2" alt="Band"><h3>Electric Storm</h3></div>
+    <div class="carousel-card"><img src="https://via.placeholder.com/280x280/EA5F0E/ffffff?text=Band+3" alt="Band"><h3>Crimson Tide</h3></div>
+    <div class="carousel-card"><img src="https://via.placeholder.com/280x280/015253/ffffff?text=Band+4" alt="Band"><h3>Midnight Riders</h3></div>
+    <div class="carousel-card"><img src="https://via.placeholder.com/280x280/D03013/ffffff?text=Band+5" alt="Band"><h3>Neon Knights</h3></div>
+    <div class="carousel-card"><img src="https://via.placeholder.com/280x280/EA5F0E/ffffff?text=Band+6" alt="Band"><h3>Steel Phoenix</h3></div>
+  </div>
+</div>
+</section>
+
+<!-- Schedule -->
+<section id="schedule">
+<div class="container">
+  <h2>Cronograma</h2>
+  <div class="tabs">
+    <button class="tab active" data-day="1">Día 1</button>
+    <button class="tab" data-day="2">Día 2</button>
+    <button class="tab" data-day="3">Día 3</button>
+  </div>
+  <div class="content active" id="day1">
+    <table>
+      <tr><th>Hora</th><th>Artista</th><th>Escenario</th></tr>
+      <tr><td>14:00</td><td>Wild Horses</td><td>Principal</td></tr>
+      <tr><td>16:00</td><td>The Thunderbolts</td><td>Principal</td></tr>
+      <tr><td>18:30</td><td>Electric Storm</td><td>Principal</td></tr>
+      <tr><td>21:00</td><td>Crimson Tide</td><td>Principal</td></tr>
+    </table>
+  </div>
+  <div class="content" id="day2">
+    <table>
+      <tr><th>Hora</th><th>Artista</th><th>Escenario</th></tr>
+      <tr><td>14:00</td><td>Velvet Rebels</td><td>Secundario</td></tr>
+      <tr><td>16:00</td><td>Midnight Riders</td><td>Principal</td></tr>
+      <tr><td>18:30</td><td>Neon Knights</td><td>Principal</td></tr>
+      <tr><td>21:00</td><td>Steel Phoenix</td><td>Principal</td></tr>
+    </table>
+  </div>
+  <div class="content" id="day3">
+    <table>
+      <tr><th>Hora</th><th>Artista</th><th>Escenario</th></tr>
+      <tr><td>14:00</td><td>Blackout</td><td>Secundario</td></tr>
+      <tr><td>16:00</td><td>Solar Eclipse</td><td>Principal</td></tr>
+      <tr><td>18:30</td><td>Electric Storm</td><td>Principal</td></tr>
+      <tr><td>21:00</td><td>The Thunderbolts</td><td>Principal</td></tr>
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- Tickets -->
+<section id="tickets">
+<div class="container">
+  <h2>Entradas</h2>
+  <div class="tickets">
+    <div class="ticket">
+      <h3>Entrada General</h3>
+      <div class="ticket-price">$199</div>
+      <ul>
+        <li>Pase de 3 Días</li>
+        <li>Acceso a Todos los Escenarios</li>
+        <li>Mapa del Festival</li>
+      </ul>
+      <button class="buy-button">Comprar Ahora</button>
+    </div>
+    <div class="ticket">
+      <h3>Pase VIP</h3>
+      <div class="ticket-price">$399</div>
+      <ul>
+        <li>Pase de 3 Días</li>
+        <li>Acceso al Salón VIP</li>
+        <li>Área Premium</li>
+        <li>Entrada Rápida</li>
+      </ul>
+      <button class="buy-button">Comprar Ahora</button>
+    </div>
+    <div class="ticket">
+      <h3>Premium</h3>
+      <div class="ticket-price">$699</div>
+      <ul>
+        <li>Pase de 3 Días</li>
+        <li>Backstage</li>
+        <li>Meet & Greet</li>
+        <li>Estacionamiento</li>
+      </ul>
+      <button class="buy-button">Comprar Ahora</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- About -->
+<section id="about">
+<div class="container">
+  <h2>Nosotros</h2>
+  <div class="about-text">
+    <p>Equus Rock Fest es la celebración definitiva de la música rock, reuniendo artistas legendarios durante tres días inolvidables en el Valle del Desierto. Con múltiples escenarios y sonido de clase mundial, es uno de los principales festivales de la región.</p>
+  </div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<div class="container" style="max-width: 600px;">
+  <h2>Contacto</h2>
+  <form id="contact-form">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" required>
+    </div>
+    <div class="form-group">
+      <label>Correo</label>
+      <input type="email" required>
+    </div>
+    <div class="form-group">
+      <label>Mensaje</label>
+      <textarea required></textarea>
+    </div>
+    <button type="submit" class="submit-button">Enviar</button>
+  </form>
+</div>
+</section>
+
+<!-- Email Signup -->
+<section class="email-signup">
+<div class="container" style="max-width: 600px;">
+  <h3>Recibe novedades</h3>
+  <form id="signup-form" class="signup-form">
+    <input type="email" placeholder="Tu correo" required>
+    <button type="submit">Suscribirse</button>
+  </form>
+  <p class="signup-message" id="signup-message"></p>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="container">
+  <h3>Redes Sociales</h3>
+  <div class="social-icons">
+    <a href="#" class="social-icon" title="Instagram">📱</a>
+    <a href="#" class="social-icon" title="Facebook">f</a>
+    <a href="#" class="social-icon" title="Twitter">𝕏</a>
+    <a href="#" class="social-icon" title="YouTube">▶</a>
+  </div>
+  <p class="footer-text">© 2025 Equus Rock Fest. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
