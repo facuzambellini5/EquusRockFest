@@ -184,7 +184,7 @@
     font-size: 1.3rem; 
   }
   
-  /* Schedule */
+  /* Cronograma */
   .tabs { 
     display: flex; 
     justify-content: center; 
@@ -238,69 +238,89 @@
     font-weight: bold; 
   }
   
-  /* Tickets */
-  .tickets { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    gap: 30px; 
-  }
+
+/* Entradas */
+.tickets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.ticket {
+    background: white;
+    border: 3px solid var(--primary);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ticket:hover {
+    transform: scale(1.05);
+    border-color: var(--secondary);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.ticket h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.ticket-price {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.ticket ul {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.ticket li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--light);
+    font-size: 1rem;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.ticket li::before {
+    content: "✔";
+    color: var(--secondary);
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.buy-button {
+    width: 100%;
+    background: var(--accent);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+.buy-button:hover {
+    background: var(--secondary);
+    transform: scale(1.05);
+}
+
   
-  .ticket { 
-    background: white; 
-    border: 3px solid var(--primary); 
-    border-radius: 15px; 
-    padding: 30px; 
-    text-align: center; 
-    transition: 0.3s; 
-  }
-  
-  .ticket:hover { 
-    transform: scale(1.05); 
-    border-color: var(--secondary); 
-    box-shadow: 0 10px 40px rgba(0,0,0,0.2); 
-  }
-  
-  .ticket h3 { 
-    font-size: 1.8rem; 
-    color: var(--primary); 
-    margin-bottom: 15px; 
-  }
-  
-  .ticket-price { 
-    font-size: 2.5rem; 
-    color: var(--secondary); 
-    margin-bottom: 20px; 
-  }
-  
-  .ticket ul { 
-    list-style: none; 
-    margin-bottom: 20px; 
-    text-align: left; 
-  }
-  
-  .ticket li { 
-    padding: 8px 0; 
-    border-bottom: 1px solid var(--light); 
-  }
-  
-  .buy-button { 
-    width: 100%; 
-    background: var(--accent); 
-    color: white; 
-    padding: 12px; 
-    border: none; 
-    border-radius: 50px; 
-    cursor: pointer; 
-    font-weight: bold; 
-    transition: 0.3s; 
-  }
-  
-  .buy-button:hover { 
-    background: var(--secondary); 
-    transform: scale(1.05); 
-  }
-  
-  /* About */
+  /* Sobre nosotros */
   #about { 
     background: var(--light); 
   }
@@ -311,6 +331,40 @@
     text-align: center; 
     font-size: 1.1rem; 
   }
+  
+  /* ESTILOS PARA LA SECCIÓN DE FUNDACIONES EN COLUMNAS */
+
+.fundaciones-container {
+    display: flex; /* Habilita el modo flexbox para la distribución horizontal */
+    justify-content: space-around; /* Distribuye el espacio entre los ítems */
+    gap: 20px; /* Espacio horizontal entre las columnas */
+    flex-wrap: wrap; /* Permite que los ítems se apilen en pantallas pequeñas (responsividad) */
+    margin-top: 20px;
+}
+
+.fundacion-item {
+    flex: 1; /* Permite que cada columna ocupe una parte igual del espacio disponible */
+    min-width: 300px; /* Asegura que no se aprieten demasiado en resoluciones medias */
+    text-align: center; /* Centra el contenido (texto e imagen) dentro de cada columna */
+    padding: 15px;
+    /* Opcionales para mejorar la apariencia */
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.fundacion-item h3 {
+    color: #333; /* Elige un color para los subtítulos */
+    margin-bottom: 10px;
+}
+
+.fundacion-item img {
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; 
+    margin: 15px auto 0 auto; /* Centra la imagen y añade margen superior */
+    border-radius: 4px; /* Opcional: bordes redondeados para la imagen */
+}
   
   /* Contact */
   .form-group { 
