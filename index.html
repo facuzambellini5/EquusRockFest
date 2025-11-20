@@ -6,7 +6,6 @@
 <meta name="description" content="Equus Rock Fest - Compra entradas para el mejor festival de rock">
 <title>Equus Rock Fest - Entradas e Información</title>
 <link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
 
 </head>
 <body>
@@ -17,7 +16,6 @@
     <div class="logo">🎸</div>
     <div>Equus Rock Fest</div>
   </div>
-  <button class="hamburger" id="hamburger">☰</button>
   <nav id="nav">
     <a href="#artists">Artistas</a>
     <a href="#schedule">Cronograma</a>
@@ -43,61 +41,81 @@
 </div>
 </section>
 
-<!-- Artists -->
+<!-- Artistas -->
 <section id="artists">
-<div class="container">
-  <h2>Artistas</h2>
-  <div class="carousel">
-    <div class="carousel-card"><img src="airbag.jpg" alt="Band"><h3>Airbag</h3></div>
-    <div class="carousel-card"><img src="velapuerca.jpg" alt="Band"><h3>La Vela Puerca</h3></div>
-    <div class="carousel-card"><img src="rancheros.jpg" alt="Band"><h3>Los Rancheros</h3></div>
-    <div class="carousel-card"><img src="pordioseros.webp" alt="Band"><h3>Jóvenes Pordioseros</h3></div>
-    <div class="carousel-card"><img src="animal.jpeg" alt="Band"><h3>A.N.I.M.A.L</h3></div>
-    <div class="carousel-card"><img src="ojoslocos.jpg" alt="Band"><h3>Ojos Locos</h3></div>
-    <div class="carousel-card"><img src="bagliettoVitale.jpg" alt="Band"><h3>Juan Carlos Baglietto y Lito Vitale</h3></div>
-    <div class="carousel-card"><img src="pier.webp" alt="Band"><h3>Pier</h3></div>
+  <div class="container">
+    <h2>Artistas</h2>
+
+    <div class="carousel-wrapper">
+      <button class="arrow left">&#10094;</button>
+
+      <div class="carousel" id="artistsCarousel">
+        <div class="carousel-card"><img src="airbag.jpg" alt="Band"><h3>Airbag</h3></div>
+        <div class="carousel-card"><img src="velapuerca.jpg" alt="Band"><h3>La Vela Puerca</h3></div>
+        <div class="carousel-card"><img src="rancheros.jpg" alt="Band"><h3>Los Rancheros</h3></div>
+        <div class="carousel-card"><img src="pordioseros.webp" alt="Band"><h3>Jóvenes Pordioseros</h3></div>
+        <div class="carousel-card"><img src="animal.jpeg" alt="Band"><h3>A.N.I.M.A.L</h3></div>
+        <div class="carousel-card"><img src="ojoslocos.jpg" alt="Band"><h3>Ojos Locos</h3></div>
+        <div class="carousel-card"><img src="bagliettoVitale.jpg" alt="Band"><h3>Juan Carlos Baglietto y Lito Vitale</h3></div>
+        <div class="carousel-card"><img src="pier.webp" alt="Band"><h3>Pier</h3></div>
+      </div>
+
+      <button class="arrow right">&#10095;</button>
+    </div>
+
   </div>
-</div>
 </section>
+
 
 <!-- Cronograma -->
 <section id="schedule">
-<div class="container">
-  <h2>Cronograma</h2>
-  <div class="tabs">
-    <button class="tab active" data-day="1">Día 1</button>
-    <button class="tab" data-day="2">Día 2</button>
-    <button class="tab" data-day="3">Día 3</button>
+  <div class="container">
+    <h2>Cronograma</h2>
+
+    <div class="schedule-item color1">
+      <div class="time">17:00</div>
+      <div class="artist">Pier</div>
+    </div>
+
+    <div class="schedule-item color2">
+      <div class="time">18:00</div>
+      <div class="artist">Juan Baglietto y Lito Vitale</div>
+    </div>
+
+    <div class="schedule-item color3">
+      <div class="time">19:30</div>
+      <div class="artist">Ojos Locos</div>
+    </div>
+
+    <div class="schedule-item color4">
+      <div class="time">20:40</div>
+      <div class="artist">A.N.I.M.A.L</div>
+    </div>
+
+    <div class="schedule-item color1">
+      <div class="time">21:40</div>
+      <div class="artist">Jóvenes Pordioseros</div>
+    </div>
+
+    <div class="schedule-item color2">
+      <div class="time">22:30</div>
+      <div class="artist">Los Rancheros</div>
+    </div>
+
+    <div class="schedule-item color3">
+      <div class="time">23:50</div>
+      <div class="artist">Airbag</div>
+    </div>
+
+    <div class="schedule-item color4">
+      <div class="time">01:00</div>
+      <div class="artist">La Vela Puerca</div>
+    </div>
+
   </div>
-  <div class="content active" id="day1">
-    <table>
-      <tr><th>Hora</th><th>Artista</th><th>Escenario</th></tr>
-      <tr><td>14:00</td><td>Wild Horses</td><td>Principal</td></tr>
-      <tr><td>16:00</td><td>The Thunderbolts</td><td>Principal</td></tr>
-      <tr><td>18:30</td><td>Electric Storm</td><td>Principal</td></tr>
-      <tr><td>21:00</td><td>Crimson Tide</td><td>Principal</td></tr>
-    </table>
-  </div>
-  <div class="content" id="day2">
-    <table>
-      <tr><th>Hora</th><th>Artista</th><th>Escenario</th></tr>
-      <tr><td>14:00</td><td>Velvet Rebels</td><td>Secundario</td></tr>
-      <tr><td>16:00</td><td>Midnight Riders</td><td>Principal</td></tr>
-      <tr><td>18:30</td><td>Neon Knights</td><td>Principal</td></tr>
-      <tr><td>21:00</td><td>Steel Phoenix</td><td>Principal</td></tr>
-    </table>
-  </div>
-  <div class="content" id="day3">
-    <table>
-      <tr><th>Hora</th><th>Artista</th><th>Escenario</th></tr>
-      <tr><td>14:00</td><td>Blackout</td><td>Secundario</td></tr>
-      <tr><td>16:00</td><td>Solar Eclipse</td><td>Principal</td></tr>
-      <tr><td>18:30</td><td>Electric Storm</td><td>Principal</td></tr>
-      <tr><td>21:00</td><td>The Thunderbolts</td><td>Principal</td></tr>
-    </table>
-  </div>
-</div>
 </section>
+
+
 
 <!-- Entradas -->
 <section id="tickets">
@@ -181,7 +199,7 @@
     </div>
 </section>
 
-<!-- Contact -->
+<!-- Contacto -->
 <section id="contact">
 <div class="container" style="max-width: 600px;">
   <h2>Contacto</h2>
