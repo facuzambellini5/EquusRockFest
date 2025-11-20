@@ -491,7 +491,7 @@
 /* botón centrado debajo del input */
 .signup-form button { 
     margin-top: 12px;
-    background: var(--secondary); 
+    background: var(--orange); 
     color: white; 
     padding: 12px 30px; 
     border: none; 
